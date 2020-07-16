@@ -10,4 +10,8 @@
 <project name="AICP/hardware_sony_thermanager" path="hardware/sony/thermanager" remote="github" revision="q10.0" />
 <project name="AICP/hardware_sony_macaddrsetup" path="hardware/sony/macaddrsetup" remote="github" revision="q10.0" />
 <project name="AICP/hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="q10.0" />
+  <remote name="opengapps" fetch="https://github.com/opengapps/"  />
+  <remote name="opengapps-gitlab" fetch="https://gitlab.opengapps.org/opengapps/"  />
+  <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps-gitlab" />
 </manifest>
